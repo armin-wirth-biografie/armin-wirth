@@ -16,11 +16,13 @@ a { color: var(--link); text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 a:visited { color: var(--visited); }
 .page-shell { display: grid; grid-template-columns: 176px minmax(0, 1fr); min-height: 100vh; }
-.sidebar { border-right: 1px solid var(--soft-border); background: linear-gradient(#fff, #f6f6f6 160px, #f8f9fa); padding: 14px 12px; position: sticky; top: 0; height: 100vh; overflow: auto; }
-.brand { display: flex; gap: 10px; align-items: center; margin-bottom: 28px; }
-.brand-mark { width: 44px; height: 44px; border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center; font-family: Georgia, 'Times New Roman', serif; font-size: 18px; background: white; }
-.brand strong { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: 14px; line-height: 1.15; font-weight: normal; }
-.brand span { display: block; color: var(--muted); font-size: 11px; margin-top: 4px; }
+.sidebar { border-right: 1px solid var(--soft-border); background: linear-gradient(#fff, #f6f6f6 160px, #f8f9fa); padding: 34px 12px 14px; position: sticky; top: 0; height: 100vh; overflow: auto; }
+.brand { margin-bottom: 28px; padding: 4px 0 2px; }
+.brand-wordmark { text-align: left; }
+.brand-main { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; line-height: 1; letter-spacing: -0.8px; color: var(--text); }
+.brand-main span { display: block; font-size: 20px; letter-spacing: -0.4px; margin-top: 1px; }
+.brand-line { width: 118px; height: 1px; background: var(--soft-border); margin: 8px 0 6px; }
+.brand-sub { font-size: 12px; color: var(--muted); letter-spacing: 0.02em; }
 .sidebar nav a { display: block; padding: 5px 2px; font-size: 13px; border-bottom: 1px solid #eaecf0; }
 .content { min-width: 0; }
 .topbar { min-height: 48px; border-bottom: 1px solid var(--soft-border); background: #fff; display: flex; justify-content: flex-end; align-items: center; padding: 0 24px; color: var(--muted); font-size: 13px; }
